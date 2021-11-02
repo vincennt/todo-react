@@ -15,13 +15,13 @@ class App extends React.Component{
     this.addTask = this.addTask.bind(this)
     }
     addTask(str){ 
-      this.setState(tasks = str)
+      this.setState({tasks: [{description: str, status: "To do"}, ...this.state.tasks] })
       console.log(str);
       }
     
   render(){
     return(
-    <Form addtask={this.addTask(this.props.task)} />
+    <Form addTask={this.addTask} />
     )
   }
 }
