@@ -2,6 +2,8 @@ import React from "react"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Form from './components/form.js'
 import './App.css'
+import './components/List'
+import List from "./components/List";
 
 
 class App extends React.Component{
@@ -20,8 +22,10 @@ class App extends React.Component{
       }
     
   render(){
-    return(
+    return(<>
     <Form addTask={this.addTask} />
+    <List />
+    </>
     )
   }
 }
