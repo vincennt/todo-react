@@ -2,7 +2,7 @@ import React from 'react'
 
 class Form extends React.Component{
     render(){
-        return(<h1>hella</h1>)
+        return(<h1>hea</h1>)
     }
 }
 
