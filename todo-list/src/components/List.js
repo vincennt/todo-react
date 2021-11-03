@@ -6,8 +6,10 @@ class List extends React.Component{
         
         
         return (
-            <>
-            <p>list</p>
+            <><ul>
+                <li></li>
+            </ul>
+            {console.log(this.props.tasks)};
             </>
         )
     }

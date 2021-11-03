@@ -18,13 +18,14 @@ class App extends React.Component{
     }
     addTask(str){ 
       this.setState({tasks: [{description: str, status: "To do"}, ...this.state.tasks] })
-      console.log(str);
+      
       }
-    
+  
   render(){
     return(<>
+
     <Form addTask={this.addTask} />
-    <List />
+    <List tasks={this.state.tasks} />
     </>
     )
   }
